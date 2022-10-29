@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap');
 
 *{
     font-family: 'Inter', sans-serif;
@@ -54,11 +55,14 @@ li{
 }
 
 li, .lista, button {
-    transition: all 0.4s ease 0s;
+    transition: all 0.4s;
+    padding: 5px;
 }
 .lista:hover{
-    color: #BF268A;
+    color: black;
     font-size: 1.03em;
+    background-color: #BF268A;
+    border-radius: 10px;
 }
 
 body{
@@ -70,24 +74,48 @@ body{
     overflow: hidden;
     }
 
+.principal{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.295) rgba(0, 0, 0, 0.11));
+    padding-left: 32px;
+
+}
+
 .servicos{
-    height: 30vh;
-    background-color: #ED6A5A;
+    width: 20vw;
+    height: 5vh;
+    background-color: rgba(0, 0, 0, 0.5);
     justify-content: flex-end;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: 0.4s ease-in;
+    overflow: hidden;
 }
 .servicos p{
+    font-family: 'PT Serif', serif;
+    display: none;
     color: #f1f7ed;
+    text-indent: 2em;
     text-align: justify;
+    font-weight: 400;
+    margin: auto;
     padding: 10px;
-    font-weight: 300;
-    width: 50%;
     animation-direction: alternate;
-    }
+}
 
+.servicos:hover{
+    height: 40vh;
+    width: 22vw;
+}
+.servicos:hover p{
+    display: block;
+}
 .servicos h1{
     text-align: justify;
-    padding: 1rem;
+    text-indent: 0.5em;
+    padding: none;
     color: #f1f7ed;
     font-size: 26px;
+    margin: auto;
+    width: 60%;
     font-weight: 500;
 }
