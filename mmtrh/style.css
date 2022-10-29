@@ -81,71 +81,49 @@ body{
 
 }
 
-.mentoria{
-    margin: none;
-    width: 20vw;
-    height: 5vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    transition: 0.4s ease-in;
-    overflow: hidden;
-    display: inline-block;
-}
-.mentoria p{
-    font-family: 'PT Serif', serif;
-    display: none;
-    color: #f1f7ed;
-    text-indent: 2em;
-    text-align: justify;
-    font-weight: 400;
+.principal h1{
+    text-align: center;
+    max-width: 200px;
     margin: auto;
-    padding: 10px;
-    animation-direction: alternate;
-}
-
-.mentoria:hover{
-    height: 40vh;
-    width: 22vw;
-}
-.mentoria:hover > p{
-    display: block;
-}
-.mentoria h1{
-    text-align: justify;
-    padding-left: 10px;
-    color: #f1f7ed;
-    font-size: 26px;
-    margin: auto;
-    font-weight: 500;
-}
-.recrutamento{
-    width: 20vw;
-    height: 5vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    background-color: #bf26896b;
     border-radius: 10px;
-    transition: 0.4s ease-in;
+}
+
+.servicos{
+    margin-top: 10px; 
+    width: 30vw;
+    height: 5vh;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.158);
+    background-color: #bf26896b;
+    border-radius: 10px;
+    transition: 0.3s ease;
     overflow: hidden;
 }
-.recrutamento p{
+
+.servicos p{
     font-family: 'PT Serif', serif;
     display: none;
     color: #f1f7ed;
     text-indent: 2em;
     text-align: justify;
     font-weight: 400;
+    margin-left: 10px;
+    margin-right: 10px;
     padding: 10px;
 }
 
-.recrutamento:hover{
-    height: 40vh;
-    width: 22vw;
+.servicos:hover{
+    height: 30vh;
+    width: 30vw;
 }
-.recrutamento:hover > p{
+.servicos:hover > p{
     display: block;
 }
-.recrutamento h1{
-    text-align: justify;
+.servicos h2{
+    text-align: center;
     padding-left: 10px;
     color: #f1f7ed;
     font-size: 26px;
