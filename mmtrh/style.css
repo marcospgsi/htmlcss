@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    font-weight: bold;
+    padding: 30px 10%;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #f4f1bb;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.281) ;
+}
+
+img, .logo{
+    padding: none;
+    margin-left: 0;
+    width: 125px;
+    height: 125px;
+    margin-right: auto;
+}
+
+.lista, li, button{
+    text-decoration: none;
+    color: #4c695d81;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: #5b7c6fe0;
+    color: #f1f7ed;
+    font-weight: bolder;
+    border-radius: 50px;
+    border: none;
+}
+
+button:hover{
+    background-color: #4C695D;
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+li, .lista, button {
+    transition: all 0.4s ease 0s;
+}
+.lista:hover{
+    color: #BF268A;
+    font-size: 1.03em;
+}
+
+body{
+    height: 110vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(imagens/pexels-tima-miroshnichenko-5439148.jpg); 
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    }
+
+.servicos{
+    height: 30vh;
+    background-color: #ED6A5A;
+    justify-content: flex-end;
+}
+.servicos p{
+    color: #f1f7ed;
+    text-align: justify;
+    padding: 10px;
+    font-weight: 300;
+    width: 50%;
+    animation-direction: alternate;
+    }
+
+.servicos h1{
+    text-align: justify;
+    padding: 1rem;
+    color: #f1f7ed;
+    font-size: 26px;
+    font-weight: 500;
+}
