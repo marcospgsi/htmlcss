@@ -13,11 +13,15 @@
 nav{
     display: flex;
     font-weight: bold;
-    padding: 30px 10%;
+    padding-left: 3em;
+    padding-bottom: 1em;
+    padding-right: 1em;
     align-items: center;
     justify-content: flex-end;
     background-color: #f4f1bb;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.281) ;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 img, .logo{
@@ -56,13 +60,10 @@ li{
 
 li, .lista, button {
     transition: all 0.4s;
-    padding: 5px;
 }
 .lista:hover{
-    color: black;
+    color: #BF268A;
     font-size: 1.03em;
-    background-color: #BF268A;
-    border-radius: 10px;
 }
 
 body{
@@ -80,17 +81,18 @@ body{
 
 }
 
-.servicos{
+.mentoria{
+    margin: none;
     width: 20vw;
     height: 5vh;
     background-color: rgba(0, 0, 0, 0.5);
-    justify-content: flex-end;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     transition: 0.4s ease-in;
     overflow: hidden;
+    display: inline-block;
 }
-.servicos p{
+.mentoria p{
     font-family: 'PT Serif', serif;
     display: none;
     color: #f1f7ed;
@@ -102,20 +104,50 @@ body{
     animation-direction: alternate;
 }
 
-.servicos:hover{
+.mentoria:hover{
     height: 40vh;
     width: 22vw;
 }
-.servicos:hover p{
+.mentoria:hover > p{
     display: block;
 }
-.servicos h1{
+.mentoria h1{
     text-align: justify;
-    text-indent: 0.5em;
-    padding: none;
+    padding-left: 10px;
     color: #f1f7ed;
     font-size: 26px;
     margin: auto;
-    width: 60%;
+    font-weight: 500;
+}
+.recrutamento{
+    width: 20vw;
+    height: 5vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transition: 0.4s ease-in;
+    overflow: hidden;
+}
+.recrutamento p{
+    font-family: 'PT Serif', serif;
+    display: none;
+    color: #f1f7ed;
+    text-indent: 2em;
+    text-align: justify;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.recrutamento:hover{
+    height: 40vh;
+    width: 22vw;
+}
+.recrutamento:hover > p{
+    display: block;
+}
+.recrutamento h1{
+    text-align: justify;
+    padding-left: 10px;
+    color: #f1f7ed;
+    font-size: 26px;
     font-weight: 500;
 }
