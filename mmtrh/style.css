@@ -11,6 +11,11 @@
 }
 
 nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15vh;
     display: flex;
     font-weight: bold;
     padding-left: 3em;
@@ -18,7 +23,7 @@ nav{
     padding-right: 1em;
     align-items: center;
     justify-content: flex-end;
-    background-color: #f4f1bb;
+    background-color: #ebe5ce;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.281) ;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -34,20 +39,23 @@ img, .logo{
 
 .lista, li, button{
     text-decoration: none;
-    color: #4c695d81;
+    color: #2b8577;
 }
 
 button{
     padding: 9px 25px;
-    background-color: #5b7c6fe0;
-    color: #f1f7ed;
+    background-color: #9c2d9c;
+    color: #ebe5ce;
     font-weight: bolder;
     border-radius: 50px;
     border: none;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.253);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.253);
 }
 
 button:hover{
-    background-color: #4C695D;
+    background-color: #2b8577;
+    color: #ebe5ce;
     cursor: pointer;
     transform: scale(1.03);
 }
@@ -62,7 +70,7 @@ li, .lista, button {
     transition: all 0.4s;
 }
 .lista:hover{
-    color: #BF268A;
+    color: #9c2d9c;
     font-size: 1.03em;
 }
 
@@ -78,7 +86,8 @@ body{
 .principal{
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.295) rgba(0, 0, 0, 0.11));
     padding-left: 32px;
-
+    margin-top: 17vh;
+    height: 30vh;
 }
 
 .principal h1{
@@ -88,44 +97,55 @@ body{
     margin-top: 10px;
     color: white;
     text-shadow: 1px 1px 5px black;
-    background-color: #bf26896b;
+    background-color: #9c2d9c4b;
     border-radius: 10px;
 }
 
+.bloco-servicos{
+    height: 45vh;
+}
+
 .servicos{
+    padding: 5px;
     margin-top: 10px; 
-    width: 30vw;
+    margin-left: 3em;
+    width: 20vw;
     height: 5vh;
+    min-width: 300px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.158);
-    background-color: #bf26896b;
+    background-color: rgba(0, 0, 0, 0.514);
     border-radius: 10px;
-    transition: 0.3s ease;
     overflow: hidden;
+    float: left;
 }
 
 .servicos p{
     font-family: 'PT Serif', serif;
     display: none;
     color: #f1f7ed;
-    text-indent: 2em;
+    text-indent: 1em;
     text-align: justify;
     font-weight: 400;
-    margin-left: 10px;
+    font-size: clamp(1px, 16px);
+    margin-left: 5px;
     margin-right: 10px;
-    padding: 10px;
+    padding: 5px;
+
 }
 
 .servicos:hover{
-    height: 30vh;
-    width: 30vw;
+    height: max-content;
+    padding: 5px;
+    min-width: 320px;
+    cursor: pointer;
 }
 .servicos:hover > p{
     display: block;
 }
+
 .servicos h2{
     text-align: center;
-    padding-left: 10px;
     color: #f1f7ed;
-    font-size: 26px;
+    font-size: clamp(12px, 20px);
     font-weight: 500;
 }
