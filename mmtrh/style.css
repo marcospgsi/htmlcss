@@ -32,8 +32,8 @@ nav{
 img, .logo{
     padding: none;
     margin-left: 0;
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 125px;
     margin-right: auto;
     margin-top: auto;
 }
@@ -80,7 +80,7 @@ body{
     width: 100%;
     background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(imagens/pexels-antoni-shkraba-4348401.jpg); 
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     overflow: hidden;
     }
 
@@ -108,8 +108,8 @@ body{
 
 .servicos{
     padding: 5px;
+    margin-left: 5px;
     margin-top: 10px; 
-    margin-left: 3em;
     width: 20vw;
     height: 5vh;
     min-width: 300px;
