@@ -32,9 +32,10 @@ nav{
 img, .logo{
     padding: none;
     margin-left: 0;
-    width: 125px;
-    height: 125px;
+    width: 150px;
+    height: 150px;
     margin-right: auto;
+    margin-top: auto;
 }
 
 .lista, li, button{
@@ -77,7 +78,7 @@ li, .lista, button {
 body{
     height: 110vh;
     width: 100%;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(imagens/pexels-tima-miroshnichenko-5439148.jpg); 
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(imagens/pexels-antoni-shkraba-4348401.jpg); 
     background-size: cover;
     background-position: center;
     overflow: hidden;
